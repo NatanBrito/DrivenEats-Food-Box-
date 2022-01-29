@@ -67,6 +67,7 @@ header p{
     margin-right: 16px;
     border-radius:9px;
     cursor:pointer;
+
 }
 .quadro-almoco img{
     width:144px;
@@ -174,12 +175,14 @@ footer{
   bottom:0;
   
 }
+
 .finalizar-pedido{
     background-color: #CBCBCB;
- width:364px;
- height:61px;
- margin: 0px auto;
- border-radius: 50px;
+    width:364px;
+    height:61px;
+    margin: 0px auto;
+    border-radius: 50px;
+    
 }
 .finalizar-pedido p {
     color: #FFFFFF;
@@ -190,4 +193,7 @@ footer{
 }
 .finalizar-pedido{
     cursor:hand;
+}
+.select{
+    border: 5px solid green;
 }
