@@ -6,10 +6,11 @@ body{
 }
 
 header{
+  z-index: 1;
     font-family: 'Righteous', cursive;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
+    position: absolute;
 top:0;
 right:0;
 left:0;
@@ -176,7 +177,7 @@ footer{
   display:flex;
   align-items: center;
   position: fixed;
-  bottom:0;
+  bottom:0%;
   
 } /*PRA FICAR VERDE A PARTE DE FINALIZAR PEDIDO*/
 .pedido-finalizado{
@@ -218,6 +219,20 @@ footer{
 }
 .select{
     border: 5px solid green;
+}
+.quadrado-comanda{
+    width:377px;
+    height:353px;
+    background-color: #50D074;
+    position: fixed;
+    right:25%;
+    left:25%;
+    top:25%;
+    display:none;
+}
+body{
+    width:414px;
+    height:1024px;
 }
 
 
