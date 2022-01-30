@@ -27,7 +27,7 @@
         </div>
         
 <div data-identifier="dishes" class="scroll-prato">
-        <div data-identifier="food-option" class="quadro-almoco" onclick='selecionado1();'>
+        <div data-identifier="food-option" class="quadro-almoco frango" onclick='selecionadoRefeicao("frango");'>
          <div class="imagem-comida">
              <img src="./image/frango_yin_yang 1.png">
           </div>
@@ -41,7 +41,7 @@
         </div>
 
         
-        <div  data-identifier="food-option" class="quadro-almoco" onclick='selecionado2();'>
+        <div  data-identifier="food-option" class="quadro-almoco salmao" onclick='selecionadoRefeicao("salmao");'>
             <div class="imagem-comida">
                 <img src="./image/salmon-gb72aa1230_640.jpg">
             </div>
@@ -53,7 +53,7 @@
             
         </div>
 
-        <div data-identifier="food-option" class="quadro-almoco" onclick='selecionado3();'>
+        <div data-identifier="food-option" class="quadro-almoco macarrao" onclick='selecionadoRefeicao("macarrao");'>
             <div class="imagem-comida">
                 <img src="./image/pasta-g9fbf070ac_640.jpg">
             </div>
@@ -74,7 +74,7 @@
              
         <p class="frases-preto">Agora, sua bebida</p>
         <div data-identifier="drinks" class="scroll-bebidas">
-        <div data-identifier="food-option" class="quadro-bebidas" onclick='selecionado();'>                 <!-- 1 bebidas-->
+        <div data-identifier="food-option" class="quadro-bebidas cocaGelada" onclick='selecionadobebida("cocaGelada");'>                 <!-- 1 bebidas-->
              <div class="quadro-bebida">
             <div class="imagem-comida">
                 <img src="./image/coquinha_gelada 1.png">
@@ -89,7 +89,7 @@
 
         </div>
 
-        <div data-identifier="food-option" class="quadro-bebidas" onclick='selecionado();'>                 <!-- 2 bebidas-->
+        <div data-identifier="food-option" class="quadro-bebidas suco" onclick='selecionadobebida("suco");'>                 <!-- 2 bebidas-->
             <div class="quadro-bebida">
            <div class="imagem-comida">
                <img src="./image/suco.jpg">
@@ -104,7 +104,7 @@
 
        </div>
 
-       <div data-identifier="food-option" class="quadro-bebidas" onclick='selecionado();'>             <!-- 3 bebidas-->
+       <div data-identifier="food-option" class="quadro-bebidas cocaZero" onclick='selecionadobebida("cocaZero");'>             <!-- 3 bebidas-->
         <div class="quadro-bebida">
        <div class="imagem-comida">
            <img src="./image/coquinha_gelada 1.png">
@@ -127,7 +127,7 @@
         <p class="frases-preto">Por fim, sua sobremesa</p>
             <div data-identifier="desserts" class="scroll-sobremesas">
 
-                  <div data-identifier="food-option" class="quadro-sobremesa" onclick='selecionado();'>  <!-- 1 sobremesa--> 
+                  <div data-identifier="food-option" class="quadro-sobremesa brownie" onclick='selecionadoSobremesa("brownie");'>  <!-- 1 sobremesa--> 
                    <div class="imagem-comida">
                        <img src="./image/brownie.jpg">
                    </div>
@@ -142,7 +142,7 @@
             
  
                 <!-- 2 sobremesa-->
-                <div data-identifier="food-option" class="quadro-sobremesa" onclick='selecionado();'>
+                <div data-identifier="food-option" class="quadro-sobremesa cinnamon" onclick='selecionadoSobremesa("cinnamon");'>
                <div class="imagem-comida">
                    <img src="./image/cinnamon-rol.jpg">
                </div>
@@ -157,7 +157,7 @@
           
 
                <!-- 3 sobremesa-->
-            <div data-identifier="food-option" class="quadro-sobremesa" onclick='selecionado();'>
+            <div data-identifier="food-option" class="quadro-sobremesa cup-cake" onclick='selecionadoSobremesa("cup-cake");'>
            <div class="imagem-comida">
                <img src="./image/cup-cake.jpg">
            </div>
@@ -178,13 +178,30 @@
 
     </div>
     <footer>
-      <div class="finalizar-pedido">
+      <div class="finalizar-pedido " >
             <p> Selecione os 3 itens</p>
             <p> para fechar o pedido</p>
+            </div>
+            <div class="pedido-finalizado">
+                <p>Finalizar pedido</p>
             </div>
 
         
     </footer>
+    <!-- divs pro parametro achar e aplicar o border--->
+    <div class="frango">
+    </div>
+    <div class="salmao"></div>
+    <div class="macarrao"></div>
+
+    <div class="cocaGelada"></div>
+    <div class="suco"></div>
+    <div class="cocaZero"></div>
+
+    <div class="brownie"></div>
+    <div class="cup-cake"></div> 
+     <div class="cinnamon"></div>
+
     <div class="select"> </div>
     <script src="script.js"></script>
 </body>

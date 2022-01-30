@@ -114,6 +114,7 @@ color:#A6A6A6;
     margin-right: 16px;
     border-radius:9px;
     cursor:pointer;
+    border: 5px solid white;
 
 }
 .quadro-bebidas img{
@@ -147,6 +148,7 @@ color:#A6A6A6;
     margin-right: 16px;
     border-radius:9px;
     cursor:pointer;
+    border: 5px solid white;
 
 }
 .quadro-sobremesa img{
@@ -176,7 +178,26 @@ footer{
   position: fixed;
   bottom:0;
   
+} /*PRA FICAR VERDE A PARTE DE FINALIZAR PEDIDO*/
+.pedido-finalizado{
+    cursor:hand;
 }
+.pedido-finalizado{    
+    background-color: green;
+    width:364px;
+    height:61px;
+    margin: 0px auto;
+    border-radius: 50px;
+    display:none;
+}
+.pedido-finalizado p {
+    color: black;
+    font-size:20px;
+    font-weight:400;
+    text-align: center;
+   padding: 17px; 
+}       /*-------------quando adiciona o display
+                        none,ele vai pro meio------------*/
 
 .finalizar-pedido{
     background-color: #CBCBCB;
@@ -184,7 +205,6 @@ footer{
     height:61px;
     margin: 0px auto;
     border-radius: 50px;
-    
 }
 .finalizar-pedido p {
     color: #FFFFFF;
@@ -199,3 +219,5 @@ footer{
 .select{
     border: 5px solid green;
 }
+
+
