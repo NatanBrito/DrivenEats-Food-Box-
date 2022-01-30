@@ -1,5 +1,15 @@
-
-                 /*selecionador de prato principal*/
+//as divs pra retirada de valores, não habilitei as de preços ainda
+let almocoFinal;
+let bebidaFinal;
+let sobremesaFinal;
+let precoAlmocoFinal;
+let precoBebidaFinal;
+let precoSobremesaFinal;
+                
+                
+                
+                
+                /*selecionador de prato principal*/
 function selecionadoRefeicao(refeicaoPrincipal){
   //forma bruta de resolver o problema
   const remove1 = document.querySelector(".frango");
@@ -8,11 +18,12 @@ function selecionadoRefeicao(refeicaoPrincipal){
   remove2.classList.remove("select");
   const remove3 = document.querySelector(".macarrao");
   remove3.classList.remove("select");
-// .................
+
+  // .................
 
   const prato= document.querySelector("."+refeicaoPrincipal);
   prato.classList.add("select");
-  prompt("selecionado fiote "+refeicaoPrincipal);
+   almoco = refeicaoPrincipal;
   return refeicaoPrincipal;
 }
 
@@ -30,6 +41,8 @@ function selecionadoRefeicao(refeicaoPrincipal){
 
 const bebida= document.querySelector("."+bebidaPrincipal);
 bebida.classList.add("select");
+bebidaFinal=bebidaPrincipal;
+return  bebidaPrincipal;
 
 }
                   /*selecionador de sobremesas*/
@@ -46,5 +59,11 @@ function selecionadoSobremesa(sobremesaPrincipal){
 
   const sobremesa= document.querySelector("."+sobremesaPrincipal);
   sobremesa.classList.toggle("select");
+  sobremesaFinal= sobremesaPrincipal;
+  return sobremesaPrincipal;
   }  
   
+  function comanda(){
+    const comanda=document.querySelector(".quadrado-comanda")
+    // achar como faz pra remover o display:none;
+  }
