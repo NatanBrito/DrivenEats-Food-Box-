@@ -1,13 +1,20 @@
-function selecionado1() {
-const elemento= document.querySelector(".quadro-almoco");
-elemento.classList.toggle("select") ;  
-}
-function selecionado2() {
-    const elemento= document.querySelector(".quadro-almoco");
-    elemento.classList.add("select") ;  
-    }
 
-    function selecionado3() {
-        const elemento= document.querySelector(".quadro-almoco");
-        elemento.classList.add("select") ;  
-        }
+                 /*selecionador de prato principal*/
+function selecionadoAlmoco(pratoPrincipal){
+const prato= document.querySelector("."+pratoPrincipal);
+prato.classList.toggle("select");
+
+}
+
+                      /*selecionador de bebida*/ 
+function selecionadoBebida(bebidaPrincipal){
+const bebida= document.querySelector("."+bebidaPrincipal);
+bebida.classList.toggle("select");
+
+}
+                  /*selecionador de sobremesas*/
+function selecionadoSobremesa(sobremesaPrincipal){
+    const sobremesa= document.querySelector("."+sobremesaPrincipal);
+  sobremesa.classList.toggle("select");
+    
+    }
