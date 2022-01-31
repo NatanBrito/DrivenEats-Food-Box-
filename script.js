@@ -81,6 +81,8 @@ function selecionadoSobremesa(sobremesaPrincipal,preco){
   
 }
 function comandaPrato() {
+  const fechamento= document.querySelector(".quadro-comanda")
+  fechamento.classList.remove("esconder");
   document.getElementById("pratin") +=almocoFinal +precoAlmocoFinal;
   
   document.getElementById("bebidinha") +=bebidaFinal +bebidaFinal;
