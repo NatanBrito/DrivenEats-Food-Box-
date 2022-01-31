@@ -10,7 +10,7 @@ let precoSobremesaFinal;
                 
                 
                 /*selecionador de prato principal*/
-function selecionadoRefeicao(refeicaoPrincipal){
+function selecionadoRefeicao(refeicaoPrincipal,preco){
   //forma bruta de resolver o problema
   const remove1 = document.querySelector(".frango");
   remove1.classList.remove("select");
@@ -23,13 +23,15 @@ function selecionadoRefeicao(refeicaoPrincipal){
 
   const prato= document.querySelector("."+refeicaoPrincipal);
   prato.classList.add("select");
-   almoco = refeicaoPrincipal;
+   almocoFinal = refeicaoPrincipal;
+   precoAlmocoFinal= preco;
   return refeicaoPrincipal;
+  chamandoComanda();
 }
 
                       /*selecionador de bebida*/ 
 
- function selecionadobebida(bebidaPrincipal){
+ function selecionadobebida(bebidaPrincipal,preco){
 
   const remove1 = document.querySelector(".cocaGelada");
   remove1.classList.remove("select");
@@ -42,12 +44,14 @@ function selecionadoRefeicao(refeicaoPrincipal){
 const bebida= document.querySelector("."+bebidaPrincipal);
 bebida.classList.add("select");
 bebidaFinal=bebidaPrincipal;
+precoBebidaFinal=preco;
 return  bebidaPrincipal;
+chamandoComanda();
 
 }
                   /*selecionador de sobremesas*/
 
-function selecionadoSobremesa(sobremesaPrincipal){
+function selecionadoSobremesa(sobremesaPrincipal,preco){
 
   const remove1 = document.querySelector(".brownie");
   remove1.classList.remove("select");
@@ -58,12 +62,33 @@ function selecionadoSobremesa(sobremesaPrincipal){
 
 
   const sobremesa= document.querySelector("."+sobremesaPrincipal);
-  sobremesa.classList.toggle("select");
+  sobremesa.classList.add("select");
   sobremesaFinal= sobremesaPrincipal;
+  precoSobremesaFinal=preco;
   return sobremesaPrincipal;
+  chamandoComanda();
   }  
   
-  function comanda(){
-    const comanda=document.querySelector(".quadrado-comanda")
-    // achar como faz pra remover o display:none;
+  function chamandoComanda(){
+    
+    if(almocoFinal!== null && bebidaFinal!==null && sobremesaFinal!==null){
+    const mudancaBotao= document.querySelector("pedido-finalizado")
+    mudancaBotao.classList.remove("esconder")
+    const escondendo= document.querySelector(".finalizar-pedido");
+    escondendo.classList.add("esconder");
+   comandaPrato();
   }
+  
+}
+function comandaPrato() {
+  document.getElementById("pratin") +=almocoFinal +precoAlmocoFinal;
+  
+  document.getElementById("bebidinha") +=bebidaFinal +bebidaFinal;
+  
+  document.getElementById("docin") +=sobremesaFinal +sobremesaFinal;
+  }
+
+//testes pra fazer a comandinha
+
+
+

@@ -2,8 +2,10 @@
 
 body{
     background-color: #E5E5E5;
-    
-}
+        width:414px;
+        height:1024px;
+
+    }
 
 header{
   z-index: 1;
@@ -189,21 +191,21 @@ footer{
     height:61px;
     margin: 0px auto;
     border-radius: 50px;
-    display:none;
 }
 .pedido-finalizado p {
-    color: black;
+    color: white;
     font-size:20px;
     font-weight:400;
     text-align: center;
    padding: 17px; 
+   z-index: 1;
 }       /*-------------quando adiciona o display
                         none,ele vai pro meio------------*/
 
 .finalizar-pedido{
     background-color: #CBCBCB;
     width:364px;
-    height:61px;
+    height:80px;
     margin: 0px auto;
     border-radius: 50px;
 }
@@ -228,11 +230,33 @@ footer{
     right:25%;
     left:25%;
     top:25%;
+}
+.esconder{
     display:none;
 }
-body{
-    width:414px;
-    height:1024px;
+
+.almocoComanda{
+padding-top:10px;
+padding-bottom:10px;
+margin-top: 15px;
+font-size:20px;
 }
-
-
+.bebidaComanda{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top: 15px;
+    font-size:20px;
+}
+.sobremesaComanda{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top: 15px;
+    font-size:20px;
+}
+.aa{
+    display: flex;
+    padding-top:10px;
+padding-bottom:10px;
+margin-top: 15px;
+font-size:20px;
+}

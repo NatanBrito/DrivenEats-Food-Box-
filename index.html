@@ -27,7 +27,7 @@
         </div>
         
 <div data-identifier="dishes" class="scroll-prato">
-        <div data-identifier="food-option" class="quadro-almoco frango" onclick='selecionadoRefeicao("frango");'>
+        <div data-identifier="food-option" class="quadro-almoco frango" onclick='selecionadoRefeicao("frango","R$ 14,90");'>
          <div class="imagem-comida">
              <img src="./image/frango_yin_yang 1.png">
           </div>
@@ -41,7 +41,7 @@
         </div>
 
         
-        <div  data-identifier="food-option" class="quadro-almoco salmao" onclick='selecionadoRefeicao("salmao");'>
+        <div  data-identifier="food-option" class="quadro-almoco salmao" onclick='selecionadoRefeicao("salmao","R$ 24,90");'>
             <div class="imagem-comida">
                 <img src="./image/salmon-gb72aa1230_640.jpg">
             </div>
@@ -53,7 +53,7 @@
             
         </div>
 
-        <div data-identifier="food-option" class="quadro-almoco macarrao" onclick='selecionadoRefeicao("macarrao");'>
+        <div data-identifier="food-option" class="quadro-almoco macarrao" onclick='selecionadoRefeicao("macarrao","R$ 19,90");'>
             <div class="imagem-comida">
                 <img src="./image/pasta-g9fbf070ac_640.jpg">
             </div>
@@ -74,7 +74,7 @@
              
         <p class="frases-preto">Agora, sua bebida</p>
         <div data-identifier="drinks" class="scroll-bebidas">
-        <div data-identifier="food-option" class="quadro-bebidas cocaGelada" onclick='selecionadobebida("cocaGelada");'>                 <!-- 1 bebidas-->
+        <div data-identifier="food-option" class="quadro-bebidas cocaGelada" onclick='selecionadobebida("cocaGelada","R$ 4,90");'>                 <!-- 1 bebidas-->
              <div class="quadro-bebida">
             <div class="imagem-comida">
                 <img src="./image/coquinha_gelada 1.png">
@@ -89,7 +89,7 @@
 
         </div>
 
-        <div data-identifier="food-option" class="quadro-bebidas suco" onclick='selecionadobebida("suco");'>                 <!-- 2 bebidas-->
+        <div data-identifier="food-option" class="quadro-bebidas suco" onclick='selecionadobebida("suco","R$ 7,90");'>                 <!-- 2 bebidas-->
             <div class="quadro-bebida">
            <div class="imagem-comida">
                <img src="./image/suco.jpg">
@@ -104,7 +104,7 @@
 
        </div>
 
-       <div data-identifier="food-option" class="quadro-bebidas cocaZero" onclick='selecionadobebida("cocaZero");'>             <!-- 3 bebidas-->
+       <div data-identifier="food-option" class="quadro-bebidas cocaZero" onclick='selecionadobebida("cocaZero","R$ 4,50");'>             <!-- 3 bebidas-->
         <div class="quadro-bebida">
        <div class="imagem-comida">
            <img src="./image/coquinha_gelada 1.png">
@@ -127,7 +127,7 @@
         <p class="frases-preto">Por fim, sua sobremesa</p>
             <div data-identifier="desserts" class="scroll-sobremesas">
 
-                  <div data-identifier="food-option" class="quadro-sobremesa brownie" onclick='selecionadoSobremesa("brownie");'>  <!-- 1 sobremesa--> 
+                  <div data-identifier="food-option" class="quadro-sobremesa brownie" onclick='selecionadoSobremesa("brownie","R$ 5,90");'>  <!-- 1 sobremesa--> 
                    <div class="imagem-comida">
                        <img src="./image/brownie.jpg">
                    </div>
@@ -142,7 +142,7 @@
             
  
                 <!-- 2 sobremesa-->
-                <div data-identifier="food-option" class="quadro-sobremesa cinnamon" onclick='selecionadoSobremesa("cinnamon");'>
+                <div data-identifier="food-option" class="quadro-sobremesa cinnamon" onclick='selecionadoSobremesa("cinnamon","R$ 4,50");'>
                <div class="imagem-comida">
                    <img src="./image/cinnamon-rol.jpg">
                </div>
@@ -157,7 +157,7 @@
           
 
                <!-- 3 sobremesa-->
-            <div data-identifier="food-option" class="quadro-sobremesa cup-cake" onclick='selecionadoSobremesa("cup-cake");'>
+            <div data-identifier="food-option" class="quadro-sobremesa cup-cake" onclick='selecionadoSobremesa("cup-cake","R$ 6,90");'>
            <div class="imagem-comida">
                <img src="./image/cup-cake.jpg">
            </div>
@@ -178,41 +178,36 @@
 
     </div>
     <footer>
-      <div class="finalizar-pedido " >
+      <div class="finalizar-pedido " onclick="chamandoComanda();" >
             <p> Selecione os 3 itens</p>
             <p> para fechar o pedido</p>
             </div>
-            <div class="pedido-finalizado" onclick="comanda();">
+            <div class="pedido-finalizado " onclick="chamandoComanda();">
                 <p>Finalizar pedido</p>
             </div>
-            <div class="quadrado-comanda">
-                
-            </div>
+            <div class="quadrado-comanda esconder">
+                <p id="pratin"class="almocoComanda" >Seu Prato:</p>
+                <p  id= "bebidinha" class="bebidaComanda" > Sua bebida: </p>
 
-        
+               
+                <p  id="docin"class="sobremesaComanda" >Sua sobremesa:</p> 
+            
+            </div>
+            <div class="esconder"></div>
+            
     </footer>
     <!-- divs pro parametro achar e aplicar o border--->
     <div class="frango">
     </div>
-    <div class="preco1">R$ 14,90</div>
     <div class="salmao"></div>
-    <div class="preco2"></div>
     <div class="macarrao"></div>
-    <div class="preco3"></div>
 
     <div class="cocaGelada"> </div>
-    <div class="preco4"> </div>
     <div class="suco"> </div>
-    <div class="preco5"> </div>
     <div class="cocaZero"> </div>
-    <div class="preco6"> </div>
     <div class="brownie"> </div>
-    <div class="preco7"> </div>
     <div class="cup-cake"> </div>
-    <div class="preco8"> </div>
      <div class="cinnamon"> </div>
-     <div class="preco9"> </div>
-
 
     <div class="select"> </div>
     <script src="script.js"></script>
